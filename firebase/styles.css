@@ -6,12 +6,11 @@
 
 a {
 	text-decoration: none;
-	color: #000;
+	color: inherit;
 }
 
 a:hover {
 	text-decoration: underline;
-	color: #333;
 	cursor: pointer;
 }
 
@@ -48,41 +47,31 @@ header:hover{
 	justify-content: space-between;
 }
 
-#topnav li{
-	padding-right: 1rem;
-}
-
 #topnav ul li:first-child{
 	font-size: 1.2em;
 }
 
 #topnav li{
 	padding-right: 1.2rem;
+	display: inline;
 }
 
 #darkmodetoggle{
 	padding-right: 0.2rem;
 }
 
+#darkmodetoggle:hover{
+	cursor: pointer;
+}
+
 #topright {
+	flex-grow: 1;
 	display: flex;
 	justify-content: space-between;
 }
 
 #rss {
 	padding-left: 0.3rem;
-}
-
-#toconsole {
-	
-}
-
-#topnav li{
-	display: inline;
-}
-
-#topright{
-	flex-grow: 1;
 }
 
 /* header below nav + posts */
@@ -148,6 +137,10 @@ main {
 
 #postDiv .post {
 	padding-bottom: 1rem;
+}
+
+#postDiv .post:hover {
+	color: #22C;
 }
 
 #next{
