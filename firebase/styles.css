@@ -1,0 +1,195 @@
+* {
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid black;*/
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #333;
+	cursor: pointer;
+}
+
+body{
+	background-image: url("images/placeholder-background-image.png");
+	/*padding: 1rem 3rem;*/
+	color: #000;
+	font-family: Verdana, sans-serif;
+}
+
+/* header + topnav */
+
+header {
+	border: 1px solid blue;
+	padding: 1rem 3rem;
+}
+
+header:hover{
+	
+}
+
+#topbuttons {
+	display: flex;
+}
+
+#topbuttons > *{
+	padding: 1rem 1rem 1rem 0;
+	font-size: 1.3em;
+}
+
+#topleft{
+	flex-grow: 3;
+	display: flex;
+	justify-content: space-between;
+}
+
+#topnav li{
+	padding-right: 1rem;
+}
+
+#topnav ul li:first-child{
+	font-size: 1.2em;
+}
+
+#topnav li{
+	padding-right: 1.2rem;
+}
+
+#darkmodetoggle{
+	padding-right: 0.2rem;
+}
+
+#topright {
+	display: flex;
+	justify-content: space-between;
+}
+
+#rss {
+	padding-left: 0.3rem;
+}
+
+#toconsole {
+	
+}
+
+#topnav li{
+	display: inline;
+}
+
+#topright{
+	flex-grow: 1;
+}
+
+/* header below nav + posts */
+
+h1 {
+	margin: 4rem 0;
+}
+
+.post {
+	width: 35rem;
+}
+
+#toppost {
+	margin-top: 2rem;
+	width: 70%;
+}
+
+h2 {
+	font-size: 3.5em;
+	margin-bottom: 5rem;
+}
+
+.person {
+	width: 40rem;
+	overflow: auto;
+	margin: 1rem 0 1rem 2rem;
+}
+
+.person img{
+	float: left;
+}
+
+.person > *:not(img){
+	padding-left: 1rem;
+	overflow: hidden;
+	margin-bottom: 0.2rem;
+}
+
+h3 {
+	font-size: 2em;
+	margin: 2rem 0 3rem 2rem;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+/* main */
+
+main {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 3rem;
+}
+
+#postDiv {
+	flex-basis: 30%;
+}
+
+#postDiv .post {
+	padding-bottom: 1rem;
+}
+
+#next{
+	display: block;
+	padding: 4rem 0;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+/* aside */
+
+aside {
+	padding-right: 5rem;
+	flex-basis: 25%;
+}
+
+aside h3 {
+	font-size: 2em;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+#sidenav ul{
+	list-style-type: none;
+}
+
+#sidenav li{
+	border: 1px solid blue;
+	border-radius: 4px;
+	margin-bottom: 0.2rem;
+	display: table;
+	box-sizing: border-box; 
+}
+
+#sidenav li a{
+	display: block;
+	box-sizing: border-box;
+	padding: 1rem 2rem;
+}
+
+#sidenav li a:hover{
+	background-color: #33A;
+	color: #FFF;
+	text-decoration: none;
+}
